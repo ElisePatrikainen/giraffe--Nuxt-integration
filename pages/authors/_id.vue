@@ -1,8 +1,5 @@
 <template>
-  <div>
-    <v-row>
-      <v-col cols="12" lg="12" xl="8">
-        <div>
+            <div>
           <div>
             <div class="my-2">
               <h2 class="text-h4 font-weight-bold">Our Authors</h2>
@@ -72,25 +69,7 @@
             </v-row>
           </div>
         </div>
-      </v-col>
-
-      <v-col>
-        <div>
-          <siderbar />
-        </div>
-      </v-col>
-    </v-row>
-  </div>
 </template>
-
-<script>
-export default {
-  name: "Category",
-  components: {
-    siderbar: () => import("@/components/details/sidebar"),
-  },
-};
-</script>
 
 <style lang="scss" scoped>
 .authors {

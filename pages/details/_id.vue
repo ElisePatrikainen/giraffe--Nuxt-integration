@@ -1,8 +1,5 @@
 <template>
-  <div>
-    <v-row>
-      <v-col cols="12" lg="12" xl="8">
-        <div>
+            <div>
           <div>
             <v-card flat color="transparent">
               <v-img
@@ -245,22 +242,4 @@
             </v-card>
           </div>
         </div>
-      </v-col>
-
-      <v-col>
-        <div>
-          <siderbar />
-        </div>
-      </v-col>
-    </v-row>
-  </div>
 </template>
-
-<script>
-export default {
-  name: "Category",
-  components: {
-    siderbar: () => import("@/components/details/sidebar")
-  }
-};
-</script>

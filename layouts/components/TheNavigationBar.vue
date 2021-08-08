@@ -51,8 +51,8 @@
         >
           <v-col class="d-flex align-center">
             <v-app-bar-nav-icon
-              @click.stop="drawer = !drawer"
               v-if="!$vuetify.breakpoint.smAndUp"
+              @click.stop="drawer = !drawer"
             />
             <v-toolbar-title
               style="cursor: pointer"
