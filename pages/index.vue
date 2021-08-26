@@ -22,13 +22,11 @@
                   class="elevation-2"
                   style="border-radius: 16px"
                 >
-                  <v-card-text>
-                    <v-btn color="accent" to="category">TIPS</v-btn>
-                  </v-card-text>
+                  <category-button style="padding: 16px"> TIPS </category-button>
                 </v-img>
 
                 <v-card-text>
-                  <div class="text-h5 font-weight-bold primary--text">
+                  <div class="text-h5 font-weight-bold" style="color: black">
                     How to write an awesome blog post in 5 steps
                   </div>
 
@@ -36,14 +34,7 @@
                     Ultrices sagittis orci a scelerisque. Massa placerat duis
                     ultricies lacus sed turpis
                   </div>
-
-                  <div class="d-flex align-center">
-                    <v-avatar color="accent" size="36">
-                      <v-icon dark>mdi-feather</v-icon>
-                    </v-avatar>
-
-                    <div class="pl-2">Yan Lee · 22 July 2019</div>
-                  </div>
+                  <signature/>
                 </v-card-text>
               </v-card>
             </div>
@@ -62,14 +53,11 @@
               src="https://cdn.pixabay.com/photo/2019/10/29/14/46/landscape-4587079_1280.jpg"
               :aspect-ratio="16 / 9"
               gradient="to top, rgba(25,32,72,.4), rgba(25,32,72,.0)"
-              height="600px"
+              height="400px"
               class="elevation-2 fill-height"
             >
               <div class="d-flex flex-column justify-space-between fill-height">
-                <v-card-text>
-                  <v-btn color="accent">ANIMALS</v-btn>
-                </v-card-text>
-
+                <category-button style="padding: 16px">ANIMALS</category-button>
                 <v-card-text>
                   <div
                     class="text-h5 py-3 font-weight-bold"
@@ -77,14 +65,7 @@
                   >
                     15 things I have always wondered about birds
                   </div>
-
-                  <div class="d-flex align-center">
-                    <v-avatar color="accent" size="36">
-                      <v-icon dark>mdi-feather</v-icon>
-                    </v-avatar>
-
-                    <div class="pl-2">Yan Lee · 03 Jan 2019</div>
-                  </div>
+                  <signature/>
                 </v-card-text>
               </div>
             </v-img>
@@ -110,26 +91,17 @@
 
           <v-col>
             <div>
-              <v-btn depressed color="accent">TRAVEL</v-btn>
-
+              <category-button>TRAVEL</category-button>
               <h3 class="text-h4 font-weight-bold pt-3">
                 Ut enim blandit volutpat maecenas volutpat blandit
               </h3>
-
               <p class="text-h6 font-weight-regular pt-3 text--secondary">
                 Duis aute irure dolor in reprehenderit in voluptate velit esse
                 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
                 cupidatat non proident, sunt in culpa qui officia deserunt
                 mollit anim id est laborum.
               </p>
-
-              <div class="d-flex align-center">
-                <v-avatar color="accent" size="36">
-                  <v-icon dark>mdi-feather</v-icon>
-                </v-avatar>
-
-                <div class="pl-2">Yan Lee · 03 Jan 2019</div>
-              </div>
+              <signature/>
             </div>
           </v-col>
         </v-row>
@@ -139,7 +111,11 @@
 </template>
 
 <script>
+import CategoryButton from "../components/CategoryButton.vue";
+import Signature from '../components/Signature.vue';
+
 export default {
-  layout: 'home',
-}
+  components: { CategoryButton, Signature },
+  layout: "home",
+};
 </script>

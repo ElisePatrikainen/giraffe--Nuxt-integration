@@ -11,13 +11,17 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'format-detection', content: 'telephone=yes' },
       { hid: 'description', name: 'description', content: 'Giraffe is a complete news/blog theme built with Vuetify created by HeroUI.' },
-      { name: 'keywords', content: 'heroui vue vuetify giraffe news blog theme freetheme template freetemplate' },
-      { name: 'format-detection', content: 'telephone=no' }
+      { hid: 'description', name: 'keywords', content: 'heroui vue vuetify giraffe news blog theme freetheme template freetemplate' },
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: 'https://wx2.sbimg.cn/2020/05/17/feather.png' }
+      // { rel: 'icon', type: 'image/x-icon', href: 'https://wx2.sbimg.cn/2020/05/17/feather.png' }
     ]
+  },
+
+  env: {
+    apiBaseUrl: 'http://localhost:1337'
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -34,9 +38,9 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/eslint
-    '@nuxtjs/eslint-module',
+    // '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/vuetify
-    '@nuxtjs/vuetify',
+    '@nuxtjs/vuetify'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -60,20 +64,6 @@ export default {
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
-    // theme: {
-    //   dark: true,
-    //   themes: {
-    //     dark: {
-    //       primary: colors.blue.darken2,
-    //       accent: colors.grey.darken3,
-    //       secondary: colors.amber.darken3,
-    //       info: colors.teal.lighten1,
-    //       warning: colors.amber.base,
-    //       error: colors.deepOrange.accent4,
-    //       success: colors.green.accent3
-    //     }
-    //   }
-    // }
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

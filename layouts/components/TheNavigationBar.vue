@@ -42,8 +42,9 @@
       :clipped-left="$vuetify.breakpoint.lgAndUp"
       color="white"
       elevate-on-scroll
+      style="padding: 0 38px"
     >
-      <v-container :class="{ 'px-0': !$vuetify.breakpoint.smAndUp }">
+      <v-container :class="{ 'px-0': !$vuetify.breakpoint.smAndUp }" fluid>
         <v-row
           align="center"
           justify="space-between"
@@ -86,6 +87,7 @@
               :href="item.href"
               :target="item.target"
               :color="item.color"
+              :dark="item.dark"
               class="ml-3 text-capitalize"
             >
               <v-icon left>{{ item.icon }}</v-icon>
@@ -107,8 +109,9 @@ export default {
         text: "Free Download",
         href: "https://github.com/AGDholo/giraffe",
         target: "_black",
-        color: "primary",
+        color: "blue-grey darken-4",
         icon: "mdi-download",
+        dark: true
       },
     ],
     barItems: [

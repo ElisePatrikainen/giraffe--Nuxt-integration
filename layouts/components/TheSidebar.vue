@@ -19,19 +19,11 @@
 
           <v-col>
             <div>
-              <v-btn depressed color="accent" small>TRAVEL</v-btn>
-
-              <h3 class="text-h6 font-weight-bold primary--text py-3">
+              <category-button small>TRAVEL</category-button>
+              <h3 class="text-h6 font-weight-bold py-3">
                 What do | need to know to start learning JavaScript?
               </h3>
-
-              <div class="d-flex align-center">
-                <v-avatar color="accent" size="24">
-                  <v-icon dark small>mdi-feather</v-icon>
-                </v-avatar>
-
-                <div class="pl-2">Yan Lee · 03 Jan 2019</div>
-              </div>
+              <signature />
             </div>
           </v-col>
         </v-row>
