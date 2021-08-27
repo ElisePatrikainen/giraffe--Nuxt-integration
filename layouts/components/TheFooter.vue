@@ -1,6 +1,5 @@
 <template>
-  <div>
-    <v-footer color="primary" dark app absolute>
+    <v-footer color="blue-grey darken-4" dark app absolute>
       <v-container>
         <v-row align="start">
           <v-col cols="12" md="3">
@@ -71,7 +70,7 @@
             <v-row>
               <v-col cols="8">
                 <v-text-field
-                  label="Filled"
+                  label="Your email"
                   solo
                   light
                   hide-details
@@ -79,7 +78,7 @@
               </v-col>
 
               <v-col cols="4">
-                <v-btn large block color="secondary">
+                <v-btn large block color="black">
                   Subscribe
                 </v-btn>
               </v-col>
@@ -100,7 +99,6 @@
         </div>
       </v-container>
     </v-footer>
-  </div>
 </template>
 
 <script>

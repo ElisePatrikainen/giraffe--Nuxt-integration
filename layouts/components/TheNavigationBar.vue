@@ -42,7 +42,7 @@
       :clipped-left="$vuetify.breakpoint.lgAndUp"
       color="white"
       elevate-on-scroll
-      style="padding: 0 38px"
+      style="padding: 0 36px"
     >
       <v-container :class="{ 'px-0': !$vuetify.breakpoint.smAndUp }" fluid>
         <v-row

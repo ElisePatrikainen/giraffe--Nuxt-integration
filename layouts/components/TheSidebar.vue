@@ -35,15 +35,14 @@
 
       <v-divider></v-divider>
 
-      <v-card color="accent" dark flat v-for="i in 5" :key="i" class="my-4">
-        <v-card-text
-          class="d-flex justify-space-between align-center white--text"
-        >
+      <div style="padding: 5px 0">
+      <v-btn color="blue darken-1" dark flat v-for="i in 5" :key="i" class="my-4" style="position: relative; width: 100%; margin: 5px 0 !important">
+        <span class="d-flex justify-space-between white--text" style="width: 100%">
           <h6 class="text-h6">Travel</h6>
-
-          <div class="text-h6">47</div>
-        </v-card-text>
-      </v-card>
+          <span class="text-h6">47</span>
+        </span>
+      </v-btn>
+      </div>
     </div>
 
     <div class="pt-4">
@@ -52,8 +51,8 @@
       <v-divider></v-divider>
 
       <div class="pt-4">
-        <div class="d-flex align-center mb-6" v-for="i in 5" :key="i">
-          <v-avatar color="accent" size="64">
+        <div class="d-flex align-center mb-3" v-for="i in 5" :key="i">
+          <v-avatar color="blue darken-1" size="64">
             <v-icon dark x-large>mdi-feather</v-icon>
           </v-avatar>
 
@@ -72,7 +71,7 @@
 
       <v-row class="pt-4">
         <v-col v-for="i in 7" :key="i" class="flex-shrink-0" cols="auto">
-          <v-chip color="accent">#Images</v-chip>
+          <v-chip color="blue darken-1" dark>#Images</v-chip>
         </v-col>
       </v-row>
     </div>
@@ -90,7 +89,7 @@
         flat
         class="pt-4"
       ></v-text-field>
-      <v-btn color="accent" block large>Subscrbe</v-btn>
+      <v-btn color="blue darken-1" dark block large>Subscribe</v-btn>
     </div>
   </div>
 </template>

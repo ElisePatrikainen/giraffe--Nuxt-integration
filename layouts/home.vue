@@ -1,7 +1,7 @@
 <template>
-  <v-app style="padding: 0 50px">
+  <v-app >
     <the-navigation-bar></the-navigation-bar>
-    <v-main>      
+    <v-main class="pl-12 pr-12">      
       <v-container fluid>
         <div>
           <v-card to="detail">
