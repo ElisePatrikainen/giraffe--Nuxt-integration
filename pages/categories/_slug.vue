@@ -14,7 +14,6 @@
           <v-hover v-slot:default="{ hover }" open-delay="50" close-delay="50">
             <div>
               <v-card
-                flat
                 :color="hover ? 'white' : 'transparent'"
                 :elevation="hover ? 12 : 0"
                 hover
@@ -28,9 +27,7 @@
                   class="elevation-2"
                   style="border-radius: 16px"
                 >
-                  <v-card-text>
-                    <v-btn color="accent">ANIMAL</v-btn>
-                  </v-card-text>
+                  <category-button class="pa-4"> ANIMAL </category-button>
                 </v-img>
 
                 <v-card-text>
@@ -42,14 +39,7 @@
                     Ultrices sagittis orci a scelerisque. Massa placerat duis
                     ultricies lacus sed turpis
                   </div>
-
-                  <div class="d-flex align-center">
-                    <v-avatar color="accent" size="36">
-                      <v-icon dark>mdi-feather</v-icon>
-                    </v-avatar>
-
-                    <div class="pl-2">Yan Lee · 22 July 2019</div>
-                  </div>
+                  <signature />
                 </v-card-text>
               </v-card>
             </div>
@@ -61,5 +51,9 @@
 </template>
 
 <script>
-export default {}
+import CategoryButton from "../../components/CategoryButton.vue";
+import Signature from "../../components/Signature.vue";
+export default {
+  components: { Signature, CategoryButton },
+};
 </script>

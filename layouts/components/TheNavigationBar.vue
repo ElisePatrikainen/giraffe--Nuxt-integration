@@ -111,7 +111,7 @@ export default {
         target: "_black",
         color: "blue-grey darken-4",
         icon: "mdi-download",
-        dark: true
+        dark: true,
       },
     ],
     barItems: [
@@ -121,11 +121,11 @@ export default {
       },
       {
         title: "Category",
-        to: "/category",
+        to: "/categories",
       },
       {
         title: "Detail",
-        to: "/detail",
+        to: "/articles",
       },
       {
         title: "Authors",

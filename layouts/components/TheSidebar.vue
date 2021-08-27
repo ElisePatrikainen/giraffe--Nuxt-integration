@@ -8,7 +8,7 @@
       <div>
         <v-row v-for="i in 5" :key="i" class="py-2">
           <v-col cols="12" md="6" lg="5">
-            <v-card height="100%" flat>
+            <v-card height="100%">
               <v-img
                 src="https://cdn.pixabay.com/photo/2021/01/22/16/55/camera-5940588_1280.jpg"
                 :aspect-ratio="16 / 9"
@@ -36,12 +36,22 @@
       <v-divider></v-divider>
 
       <div style="padding: 5px 0">
-      <v-btn color="blue darken-1" dark flat v-for="i in 5" :key="i" class="my-4" style="position: relative; width: 100%; margin: 5px 0 !important">
-        <span class="d-flex justify-space-between white--text" style="width: 100%">
-          <h6 class="text-h6">Travel</h6>
-          <span class="text-h6">47</span>
-        </span>
-      </v-btn>
+        <v-btn
+          color="blue darken-1"
+          dark
+          v-for="i in 5"
+          :key="i"
+          class="my-4"
+          style="position: relative; width: 100%; margin: 5px 0 !important"
+        >
+          <span
+            class="d-flex justify-space-between white--text"
+            style="width: 100%"
+          >
+            <h6 class="text-h6">Travel</h6>
+            <span class="text-h6">47</span>
+          </span>
+        </v-btn>
       </div>
     </div>
 
@@ -86,7 +96,6 @@
         solo
         type="email"
         outlined
-        flat
         class="pt-4"
       ></v-text-field>
       <v-btn color="blue darken-1" dark block large>Subscribe</v-btn>

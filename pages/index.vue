@@ -22,7 +22,7 @@
                   class="elevation-2"
                   style="border-radius: 16px"
                 >
-                  <category-button style="padding: 16px"> TIPS </category-button>
+                  <category-button class="pa-4"> TIPS </category-button>
                 </v-img>
 
                 <v-card-text>
@@ -34,7 +34,7 @@
                     Ultrices sagittis orci a scelerisque. Massa placerat duis
                     ultricies lacus sed turpis
                   </div>
-                  <signature/>
+                  <signature />
                 </v-card-text>
               </v-card>
             </div>
@@ -65,7 +65,7 @@
                   >
                     15 things I have always wondered about birds
                   </div>
-                  <signature/>
+                  <signature />
                 </v-card-text>
               </div>
             </v-img>
@@ -101,7 +101,7 @@
                 cupidatat non proident, sunt in culpa qui officia deserunt
                 mollit anim id est laborum.
               </p>
-              <signature/>
+              <signature />
             </div>
           </v-col>
         </v-row>
@@ -112,7 +112,7 @@
 
 <script>
 import CategoryButton from "../components/CategoryButton.vue";
-import Signature from '../components/Signature.vue';
+import Signature from "../components/Signature.vue";
 
 export default {
   components: { CategoryButton, Signature },
